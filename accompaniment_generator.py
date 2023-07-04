@@ -61,7 +61,7 @@ class Accompaniment:
                     best_chords.append(possible_chords[j])
 
             chord_ind = randint(0, len(best_chords) - 1)
-            self.accomp_notes.append(check_note_pitch(best_chords[chord_ind]))
+            self.accomp_notes.append(best_chords[chord_ind])
 
     def create_midi(self):
         """

@@ -41,8 +41,6 @@ class Melody:
             if note.type == 'note_on':
                 self.orig_notes.append(note.note)
 
-        print(self.orig_notes)
-
     def create_markov_chain(self):
         """
         Method creates a first-order Markov chain based on the midi notes
