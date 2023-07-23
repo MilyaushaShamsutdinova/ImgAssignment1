@@ -19,8 +19,8 @@ def check_note_pitch(note):
 
 class Melody:
 
-    def __init__(self):
-        self.orig_midi = MidiFile('megalovania.mid', clip=True)
+    def __init__(self, midi_file_path):
+        self.orig_midi = MidiFile(midi_file_path, clip=True)
 
         self.melody_midi = MidiFile()
         self.track = MidiTrack()
